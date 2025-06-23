@@ -6,7 +6,7 @@ Projet de mise de en relation entre des dev et des porteurs de projets
 
 ## USECASE
 
-![USECASE](docs/projet-mise-en-relation-use-cas.png)
+![USECASE](docs/projet-mise-en-relation-use-case.png)
 
 ## UML
 
