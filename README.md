@@ -23,8 +23,10 @@ mvn clean install
 mvn exec:java
 ```
 
-Pour connecter le projet à un serveur Mysql, il faut récupérer la structure du fichier `persistence-example.xml` à la racine du projet.
-Et faire un fichier `persistence.xml` qui contiendra les informations de connexion à la base de données.
+> [!TIP]
+>
+> Pour connecter le projet à un serveur MySQL, il faut récupérer la structure du fichier `persistence-example.xml` à la racine du projet.  
+> Ensuite, créer un fichier `persistence.xml` qui contiendra les informations de connexion à la base de données.
 
 ## Contribution
 
