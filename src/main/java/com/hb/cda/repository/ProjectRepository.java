@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.hb.cda.model.Project;
 
-public interface ProjectRepository {
+public interface ProjectRepository extends GeneriqueRepository<Project, Long> {
 
   List<Project> findByDateLivraison(LocalDate dateLivraison);
 

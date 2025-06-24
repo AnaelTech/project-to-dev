@@ -10,7 +10,12 @@ import com.hb.cda.utils.JpaUtil;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceException;
 
-public class CandidatureRepositoryImpl implements CandidatureRepository {
+public class CandidatureRepositoryImpl extends GeneriqueRepositoryImpl<Candidature, Long>
+    implements CandidatureRepository {
+
+  public CandidatureRepositoryImpl() {
+    super(Candidature.class);
+  }
 
   /**
    * Recherche les candidatures d'un projet.
@@ -34,5 +39,4 @@ public class CandidatureRepositoryImpl implements CandidatureRepository {
     }
     return null;
   }
-
 }

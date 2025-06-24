@@ -10,7 +10,11 @@ import com.hb.cda.utils.JpaUtil;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceException;
 
-public class ProjectRepositoryImpl implements ProjectRepository {
+public class ProjectRepositoryImpl extends GeneriqueRepositoryImpl<Project, Long> implements ProjectRepository {
+
+  public ProjectRepositoryImpl() {
+    super(Project.class);
+  }
 
   /**
    * Recherche les projets ayant une date de livraison donnée.
