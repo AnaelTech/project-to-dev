@@ -3,7 +3,8 @@
 ## Description
 
 Projet de mise en relation entre des devS et des porteurs de projets
-[Gitlab avec explication du projet](https://gitlab.com/jeandemel-formations/hb-cda-2025/projets/projet-orm)
+
+> 🦊 [Gitlab avec explication du projet](https://gitlab.com/jeandemel-formations/hb-cda-2025/projets/projet-orm)
 
 ## USECASE
 
@@ -32,6 +33,34 @@ mvn exec:java
 >
 > Pour connecter le projet à un serveur MySQL, il faut récupérer la structure du fichier `persistence-example.xml` à la racine du projet.  
 > Ensuite, créer un fichier `persistence.xml` qui contiendra les informations de connexion à la base de données.
+
+## Démarrage du projet avec Docker 🐋
+
+## Prérequis
+
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
+## Lancer l'application
+
+1. Construire et démarrer les services :
+
+   ```sh
+   docker-compose up --build
+   ```
+
+2. Accéder à l'application Java : [http://localhost:8081](http://localhost:8081)
+
+3. Accéder à phpMyAdmin : [http://localhost:8080](http://localhost:8080)
+   - Hôte MySQL : `db`
+   - Utilisateur : `root` ou `user`
+   - Mot de passe : `root` ou `password`
+
+## Arrêter les services
+
+```sh
+docker-compose down
+```
 
 ## Contribution
 
