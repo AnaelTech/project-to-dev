@@ -4,8 +4,7 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
   <persistence-unit name="main">
-
-    <properties>
+        <properties>
               <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/name_of_database?createDatabaseIfNotExist=true"/>
               <property name="jakarta.persistence.jdbc.user" value="username"/>
               <property name="jakarta.persistence.jdbc.password" value="password"/>
