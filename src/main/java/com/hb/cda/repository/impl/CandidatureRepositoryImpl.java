@@ -12,6 +12,12 @@ import jakarta.persistence.PersistenceException;
 
 public class CandidatureRepositoryImpl implements CandidatureRepository {
 
+  /**
+   * Recherche les candidatures d'un projet.
+   * 
+   * @param projet Le projet dont on cherche les candidatures.
+   * @return La liste des candidatures du projet.
+   */
   @Override
   public List<Candidature> getCandidaturesProject(Project projet) {
     try {

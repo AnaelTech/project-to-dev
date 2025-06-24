@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.hb.cda.model.enums.Technologies;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -15,6 +16,7 @@ import jakarta.persistence.Table;
 public class Dev extends User {
 
   @Enumerated(EnumType.STRING)
+  @Column(nullable = true)
   private List<Technologies> technologies;
 
   @OneToMany(mappedBy = "dev")

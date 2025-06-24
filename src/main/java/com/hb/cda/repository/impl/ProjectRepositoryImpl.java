@@ -12,6 +12,12 @@ import jakarta.persistence.PersistenceException;
 
 public class ProjectRepositoryImpl implements ProjectRepository {
 
+  /**
+   * Recherche les projets ayant une date de livraison donnée.
+   * 
+   * @param dateLivraison La date de livraison du projet.
+   * @return La liste des projets ayant une date de livraison donnée.
+   */
   @Override
   public List<Project> findByDateLivraison(LocalDate dateLivraison) {
     try {
@@ -29,6 +35,15 @@ public class ProjectRepositoryImpl implements ProjectRepository {
     return null;
   }
 
+  /**
+   * Recherche les projets ayant une thématique donnée.
+   * 
+   * 
+   *
+   * 
+   * @param thematique La thématique du projet.
+   * @return La liste des projets ayant une thématique donnée.
+   */
   @Override
   public List<Project> findByThematique(String thematique) {
     try {
@@ -45,6 +60,12 @@ public class ProjectRepositoryImpl implements ProjectRepository {
     return null;
   }
 
+  /**
+   * Recherche les projets ayant un budget donné.
+   * 
+   * @param budget Le budget du projet.
+   * @return La liste des projets ayant un budget donné.
+   */
   @Override
   public List<Project> findByBudget(double budget) {
     try {

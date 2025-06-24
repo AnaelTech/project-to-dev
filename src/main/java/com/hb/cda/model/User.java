@@ -1,5 +1,6 @@
 package com.hb.cda.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,6 +20,8 @@ public abstract class User {
   protected String email;
   protected String password;
   protected String nom;
+
+  @Column(nullable = true)
   protected String description;
 
   public User() {
