@@ -17,7 +17,7 @@ public class Dev extends User {
 
   @Enumerated(EnumType.STRING)
   @Column(nullable = true)
-  private List<Technologies> technologies;
+  private Technologies technologies;
 
   @OneToMany(mappedBy = "dev")
   private List<Candidature> candidature;
@@ -33,11 +33,11 @@ public class Dev extends User {
     super(id, email, password, nom, description);
   }
 
-  public List<Technologies> getTechnologies() {
+  public Technologies getTechnologies() {
     return technologies;
   }
 
-  public void setTechnologies(List<Technologies> technologies) {
+  public void setTechnologies(Technologies technologies) {
     this.technologies = technologies;
   }
 
