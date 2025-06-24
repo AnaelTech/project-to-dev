@@ -8,7 +8,7 @@ import com.hb.cda.utils.JpaUtil;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceException;
 
-public class GeneriqueRepositoryImpl<T, K> implements GeneriqueRepository<T, K> {
+public abstract class GeneriqueRepositoryImpl<T, K> implements GeneriqueRepository<T, K> {
 
   protected final Class<T> entityClass;
 
