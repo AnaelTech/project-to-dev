@@ -3,7 +3,7 @@
 ## Description
 
 Projet de mise en relation entre des devS et des porteurs de projets
-![Gitlab avec explication du projet](https://gitlab.com/jeandemel-formations/hb-cda-2025/projets/projet-orm)
+[Gitlab avec explication du projet](https://gitlab.com/jeandemel-formations/hb-cda-2025/projets/projet-orm)
 
 ## USECASE
 
