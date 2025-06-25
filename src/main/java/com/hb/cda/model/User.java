@@ -10,7 +10,7 @@ import jakarta.persistence.InheritanceType;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "user")
+@Table(name = "user-parent")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class User {
 
@@ -28,14 +28,6 @@ public abstract class User {
   }
 
   public User(String email, String password, String nom, String description) {
-    this.email = email;
-    this.password = password;
-    this.nom = nom;
-    this.description = description;
-  }
-
-  public User(Long id, String email, String password, String nom, String description) {
-    this.id = id;
     this.email = email;
     this.password = password;
     this.nom = nom;

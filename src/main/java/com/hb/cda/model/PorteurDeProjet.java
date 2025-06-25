@@ -14,14 +14,11 @@ public class PorteurDeProjet extends User {
   private List<Project> projets;
 
   public PorteurDeProjet() {
+    super();
   }
 
   public PorteurDeProjet(String email, String password, String nom, String description) {
     super(email, password, nom, description);
-  }
-
-  public PorteurDeProjet(Long id, String email, String password, String nom, String description) {
-    super(id, email, password, nom, description);
   }
 
   public List<Project> getProjets() {

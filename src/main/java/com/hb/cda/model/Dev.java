@@ -23,14 +23,11 @@ public class Dev extends User {
   private List<Candidature> candidature;
 
   public Dev() {
+    super();
   }
 
   public Dev(String email, String password, String nom, String description) {
     super(email, password, nom, description);
-  }
-
-  public Dev(Long id, String email, String password, String nom, String description) {
-    super(id, email, password, nom, description);
   }
 
   public Technologies getTechnologies() {
