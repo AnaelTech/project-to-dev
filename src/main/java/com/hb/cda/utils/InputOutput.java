@@ -1,5 +1,7 @@
 package com.hb.cda.utils;
 
+import java.time.LocalDate;
+
 public interface InputOutput {
   /**
    * Affiche un message
@@ -27,4 +29,16 @@ public interface InputOutput {
    *
    */
   Integer lireInt();
+
+  /**
+   * retourne un message en Date
+   *
+   */
+  LocalDate lireDate();
+
+  /**
+   * retourne un message en Double
+   *
+   */
+  Double lireDouble();
 }

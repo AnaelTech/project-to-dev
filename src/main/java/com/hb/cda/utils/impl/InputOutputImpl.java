@@ -4,6 +4,7 @@ import com.hb.cda.utils.InputOutput;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.time.LocalDate;
 
 public class InputOutputImpl implements InputOutput {
 
@@ -40,4 +41,29 @@ public class InputOutputImpl implements InputOutput {
     }
     return message;
   }
+
+  @Override
+  public LocalDate lireDate() {
+    LocalDate message = null;
+    try {
+      BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
+      message = LocalDate.parse(buffer.readLine());
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    return message;
+  }
+
+  @Override
+  public Double lireDouble() {
+    Double message = null;
+    try {
+      BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
+      message = Double.parseDouble(buffer.readLine());
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    return message;
+  }
+
 }
