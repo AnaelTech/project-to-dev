@@ -52,7 +52,6 @@ public class CandidatureRepositoryImplTest {
   @Test
   void shouldGetCandidaturesProject() {
     CandidatureRepositoryImpl candidatureRepository = new CandidatureRepositoryImpl();
-
     assertEquals(3, candidatureRepository.getCandidaturesProject(project).size());
   }
 

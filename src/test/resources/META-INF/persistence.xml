@@ -15,7 +15,7 @@
     <class>com.hb.cda.model.enums.Thematique</class>
     <properties>
       <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:mem:test"/>
-              <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+              <property name="hibernate.hbm2ddl.auto" value="create"/>
               <property name="hibernate.show_sql" value="true"/>
           </properties>
   </persistence-unit>

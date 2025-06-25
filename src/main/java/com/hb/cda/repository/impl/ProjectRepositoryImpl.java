@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 import com.hb.cda.model.Project;
+import com.hb.cda.model.enums.Thematique;
 import com.hb.cda.repository.ProjectRepository;
 import com.hb.cda.utils.JpaUtil;
 
@@ -49,7 +50,7 @@ public class ProjectRepositoryImpl extends GeneriqueRepositoryImpl<Project, Long
    * @return La liste des projets ayant une thématique donnée.
    */
   @Override
-  public List<Project> findByThematique(String thematique) {
+  public List<Project> findByThematique(Thematique thematique) {
     try {
       EntityManager eM = JpaUtil.getEntityManager();
       eM.getTransaction().begin();
