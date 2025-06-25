@@ -1,5 +1,7 @@
 package com.hb.cda.service;
 
-public interface ProjectService {
+import com.hb.cda.model.Project;
+
+public interface ProjectService extends GeneriqueService<Project, Long> {
 
 }

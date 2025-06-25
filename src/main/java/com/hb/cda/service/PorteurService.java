@@ -1,5 +1,7 @@
 package com.hb.cda.service;
 
-public interface PorteurService {
+import com.hb.cda.model.PorteurDeProjet;
+
+public interface PorteurService extends GeneriqueService<PorteurDeProjet, Long> {
 
 }

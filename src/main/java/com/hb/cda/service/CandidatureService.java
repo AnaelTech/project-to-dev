@@ -1,5 +1,7 @@
 package com.hb.cda.service;
 
-public interface CandidatureService {
+import com.hb.cda.model.Candidature;
+
+public interface CandidatureService extends GeneriqueService<Candidature, Long> {
 
 }

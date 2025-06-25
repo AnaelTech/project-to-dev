@@ -2,15 +2,15 @@ package com.hb.cda.service.impl;
 
 import java.util.List;
 
-import com.hb.cda.repository.impl.GeneriqueRepositoryImpl;
+import com.hb.cda.repository.GeneriqueRepository;
 import com.hb.cda.service.GeneriqueService;
 
 public class GeneriqueServiceImpl<T, K> implements GeneriqueService<T, K> {
 
   protected final Class<T> entityClass;
-  private GeneriqueRepositoryImpl<T, K> repository;
+  private GeneriqueRepository<T, K> repository;
 
-  public GeneriqueServiceImpl(Class<T> entityClass, GeneriqueRepositoryImpl<T, K> repository) {
+  public GeneriqueServiceImpl(Class<T> entityClass, GeneriqueRepository<T, K> repository) {
     this.entityClass = entityClass;
     this.repository = repository;
   }
