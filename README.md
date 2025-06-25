@@ -62,6 +62,16 @@ mvn exec:java
 docker-compose down
 ```
 
+## Tests
+
+J'ai ajouté des tests sur Les repositories présents tels qeu ProjectRepositoryImpl et CandidatureRepositoryImpl
+
+Pour les exécuter
+
+```sh
+mvn test
+```
+
 ## Contribution
 
 Les contributions sont les bienvenues ! N'hésitez pas à :
